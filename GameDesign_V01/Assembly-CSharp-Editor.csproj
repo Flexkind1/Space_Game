@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\SlimUI\Editor\SlimUIWindow.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V01/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
