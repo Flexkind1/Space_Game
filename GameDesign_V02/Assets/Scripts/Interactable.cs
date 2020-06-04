@@ -8,6 +8,7 @@ public class Interactable : MonoBehaviour
     // radius um Objekt innerhalb dessen man damit interagieren kann
     public float radius = 10f;
 
+    public Transform interactionTransform;
 
     bool isFocus = false;
     Transform player;
@@ -25,7 +26,7 @@ public class Interactable : MonoBehaviour
     {
         if (isFocus && !hasInteracted)
         {
-            float distance = Vector3.Distance(player.position, transform.position);
+            float distance = Vector3.Distance(player.position, interactionTransform.position);
             if(distance <= radius)
             {
                 Interact();
@@ -51,10 +52,15 @@ public class Interactable : MonoBehaviour
     }
     void OnDrawGizmosSelected()
     {
+
+        if (interactionTransform == null)
+            interactionTransform = transform; 
+
         // damit man im Unity Scene view sieht, in welchem Radius man mit Objekt interagieren kann
         // wird angezeigt durch gelbes wireframe um Objekt
+    
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, radius);
+        Gizmos.DrawWireSphere(interactionTransform.position, radius);
     }
 
     // Textanzeige

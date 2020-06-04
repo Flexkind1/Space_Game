@@ -35,7 +35,7 @@ public class playermotor : MonoBehaviour
         // damit Character nicht erst im Objekt stoppt, sondern davor
         agent.stoppingDistance = newTarget.radius * .4f;
         agent.updateRotation = false;
-        target = newTarget.transform;
+        target = newTarget.interactionTransform;
     }
 
     // hört auf den Spieler zum angeglickten Object / Interactable zu bewegen,

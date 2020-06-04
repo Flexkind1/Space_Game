@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.EventSystems;
 using UnityEngine;
 
 [RequireComponent(typeof(playermotor))]
@@ -20,7 +19,10 @@ public class playercontroller : MonoBehaviour
     }
 
     void Update()
-    {   
+    {
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
         // wenn linke Maustaste gedrückt ist
         if (Input.GetMouseButtonDown(0))
         {
