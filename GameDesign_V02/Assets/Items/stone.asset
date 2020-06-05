@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: stone
   m_EditorClassIdentifier: 
   name: Placeholder Stone
-  icon: {fileID: 21300000, guid: 9430de6166eb82447a9de5851a699ceb, type: 3}
+  icon: {fileID: 21300000, guid: f5ed938404ec1af48911538dec0cbb55, type: 3}
   isDefaultItem: 0
