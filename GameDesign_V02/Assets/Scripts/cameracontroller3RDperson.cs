@@ -19,10 +19,7 @@ public class cameracontroller3RDperson : MonoBehaviour
     private float currentZoom = 10f;
     private float yawInput = 0f;
 
-        
-    
-
-
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +34,6 @@ public class cameracontroller3RDperson : MonoBehaviour
 
         yawInput += Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
         //yawInput += Input.GetAxis("vertical") * yawSpeed * Time.deltaTime;
-
 
     }
 

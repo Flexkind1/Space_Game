@@ -40,6 +40,12 @@ public class playercontroller : MonoBehaviour
                 // stop focusing any objects
                 RemoveFocus();
             }
+
+           // if (Input.GetKeyDown(KeyCode.T))
+                
+                
+            
+
         }
 
 
