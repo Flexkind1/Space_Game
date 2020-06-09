@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class playermotor : MonoBehaviour
 {
-    public GameObject langsamTrigger;
+     GameObject langsamTrigger;
+     GameObject schnellTrigger;
+
 
     Transform target; // 
     NavMeshAgent agent; // 
@@ -23,6 +26,9 @@ public class playermotor : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        langsamTrigger = GameObject.Find("langsam(Clone)");
+        schnellTrigger = GameObject.Find("schnell(Clone)");
+
     }
 
    public void MovetoPoint (Vector3 point) 
@@ -60,29 +66,51 @@ public class playermotor : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
-    /*void OnTriggerStay(Collider langsamTrigger)
+    private void OnTriggerStay(Collider other)
     {
-       
-            SlowTrigger();
-        Debug.Log("Triggered");
-        
+        if (other.gameObject == langsamTrigger)
+        {
+            Debug.Log("langsam");
+            agent.speed = 2f;
+        }
+
+        if(other.gameObject == schnellTrigger)
+        {
+            Debug.Log("schnell");
+            agent.speed = 15f;
+        }
     }
 
-    void OnTriggerExit(Collider langsamTrigger)
-    {
-        FastTrigger();
-        Debug.Log("NotTriggered");
-    }*/
 
-    
 
-    public void SlowTrigger()
-    {
-        agent.speed = 2f;
-    }
 
-    public void FastTrigger()
-    {
-        agent.speed = 10f;
-    }
+
+    /* void OnTriggerStay(Collider other)
+     {
+        if(other = langsamTrigger)
+         {
+             SlowTrigger();
+             Debug.Log("Triggered");
+         }
+
+
+     }*/
+
+    /* void OnTriggerExit(Collider langsamTrigger)
+     {
+         FastTrigger();
+         Debug.Log("NotTriggered");
+     }*/
+
+
+
+    /* public void SlowTrigger()
+      {
+          agent.speed = 2f;
+      }
+
+      public void FastTrigger()
+      {
+          agent.speed = 10f;
+      } */
 }

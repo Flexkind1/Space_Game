@@ -32,13 +32,11 @@ public class PlayerMovement : MonoBehaviour
     // Variable soll checken, ob wir geerdet sind oder nicht.
     bool isGrounded;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Wenn die Sphere mit festgelegtem Radius mit etwas (Objekt) kollidiert, dass in unserer groundMask festgelegt 
