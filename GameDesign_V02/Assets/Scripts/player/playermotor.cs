@@ -7,12 +7,13 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class playermotor : MonoBehaviour
 {
-     GameObject langsamTrigger;
-     GameObject schnellTrigger;
+   public  GameObject langsamTrigger;
+   public  GameObject schnellTrigger;
 
 
     Transform target; // 
     NavMeshAgent agent; // 
+    float startAgentSpeed;
 
     void Update()
     {
@@ -26,8 +27,9 @@ public class playermotor : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        langsamTrigger = GameObject.Find("langsam(Clone)");
-        schnellTrigger = GameObject.Find("schnell(Clone)");
+        startAgentSpeed = agent.speed;
+       // langsamTrigger = GameObject.Find("langsam"); // (clone)
+      //  schnellTrigger = GameObject.Find("schnell");
 
     }
 
@@ -66,23 +68,30 @@ public class playermotor : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject == langsamTrigger)
-        {
-            Debug.Log("langsam");
-            agent.speed = 2f;
-        }
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    if (other.gameObject == langsamTrigger)
+    //    {
+    //        Debug.Log("langsam");
+    //        agent.speed = 2f;
+    //    }
+    //
+    //    if(other.gameObject == schnellTrigger)
+    //    {
+    //        Debug.Log("schnell");
+    //        agent.speed = 15f;
+    //    }
+    //}
 
-        if(other.gameObject == schnellTrigger)
-        {
-            Debug.Log("schnell");
-            agent.speed = 15f;
-        }
+    public void ChangeAgentSpeed(float newSpeed)
+    {
+        agent.speed = newSpeed;
     }
 
-
-
+    public void ResetAgentSpeed()
+    {
+        agent.speed = startAgentSpeed;
+    }
 
 
     /* void OnTriggerStay(Collider other)

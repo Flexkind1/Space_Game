@@ -11,7 +11,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 858ea92ef27492d4b96e99783e107a59, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -106,7 +106,7 @@ PrefabInstance:
     - target: {fileID: 1411273475291628304, guid: 6105f564a007f0f4f92ae9f88f279554,
         type: 3}
       propertyPath: m_Name
-      value: Cube Variant
+      value: Cube variant
       objectReference: {fileID: 0}
     - target: {fileID: 1411273475291628304, guid: 6105f564a007f0f4f92ae9f88f279554,
         type: 3}
@@ -172,8 +172,7 @@ PrefabInstance:
         type: 3}
       propertyPath: collectSound
       value: 
-      objectReference: {fileID: 1504782635516859095, guid: 4b803545fef8676439522ef1e1a7f87f,
-        type: 3}
+      objectReference: {fileID: 7232706645608662121}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6105f564a007f0f4f92ae9f88f279554, type: 3}

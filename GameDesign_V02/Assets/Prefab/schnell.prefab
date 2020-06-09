@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 5161593474684598674}
   - component: {fileID: 7422492326460645932}
   - component: {fileID: 2890160219592299984}
+  - component: {fileID: -2714585782887618617}
   m_Layer: 0
-  m_Name: Strigger
+  m_Name: schnell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,3 +94,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 20.710642, z: 1}
   m_Center: {x: 0, y: 9.855323, z: 0}
+--- !u!114 &-2714585782887618617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943071871160522499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afe660cdb23889448dc84a5a8398b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newPlayerSpeed: 15

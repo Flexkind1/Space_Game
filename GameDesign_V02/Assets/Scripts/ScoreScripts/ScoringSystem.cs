@@ -8,7 +8,14 @@ public class ScoringSystem : MonoBehaviour
 
     public GameObject scoreText;
     public static int theScore;
- 
+
+    public CollectObject[] AllCollectObjects;
+
+    private void Start()
+    {
+        //Array mischen dass Reihenfolge zufällig ist
+        //Mit for-Schleife alle überflüssigen Objekte löschen
+    }
 
     void Update ()
     {

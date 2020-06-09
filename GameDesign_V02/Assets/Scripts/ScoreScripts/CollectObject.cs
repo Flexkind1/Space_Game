@@ -7,10 +7,13 @@ public class CollectObject : MonoBehaviour
     public AudioSource collectSound;
     void OnTriggerEnter(Collider other)
     {
-        collectSound.Play();
-        //if (other != null) collectSound.Play();
+        print("...sound?");
+        collectSound.PlayOneShot(collectSound.clip);
+       // if (other != null) collectSound.Play();
         ScoringSystem.theScore += 1;
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
     }
 
 }
