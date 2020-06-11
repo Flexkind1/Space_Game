@@ -13,6 +13,7 @@ public class ScoringSystem : MonoBehaviour
 
     private void Start()
     {
+        theScore = 0;
         //Array mischen dass Reihenfolge zufällig ist
         //Mit for-Schleife alle überflüssigen Objekte löschen
     }
