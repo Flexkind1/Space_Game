@@ -8,15 +8,33 @@ public class ScoringSystem : MonoBehaviour
 
     public GameObject scoreText;
     public static int theScore;
-
+   
     public CollectObject[] AllCollectObjects;
 
-    private void Start()
+
+    void Start()
     {
         theScore = 0;
+
         //Array mischen dass Reihenfolge zufällig ist
-        //Mit for-Schleife alle überflüssigen Objekte löschen
+        //Mit for-Schleife alle überflüssigen Objekte löschen#
+      
+
+       
+
+
+        for (int i = 0; i < 15; i++)
+        {
+            int randomIndex = Random.Range(0, AllCollectObjects.Length);
+            AllCollectObjects[randomIndex].GetComponent<MeshRenderer>().enabled = false;
+            AllCollectObjects[randomIndex].GetComponent<BoxCollider>().enabled = false;
+        }
+
+        
+
+
     }
+
 
     void Update ()
     {
