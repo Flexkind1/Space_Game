@@ -32,7 +32,6 @@ public class ScoringSystem : MonoBehaviour
 
         
 
-
     }
 
 
@@ -40,7 +39,7 @@ public class ScoringSystem : MonoBehaviour
     {
         
         
-        scoreText.GetComponent<Text>().text = "Raumschiffteile: " + theScore;
+        scoreText.GetComponent<Text>().text = " Raumschiffteile: " + theScore + "/15";
       
 
     }

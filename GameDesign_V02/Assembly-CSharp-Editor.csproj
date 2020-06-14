@@ -134,6 +134,12 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -688,6 +694,14 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{8BF9B127-D7FF-2A85-0172-5EE7FC81E0B2}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{40F1F0F4-8B9F-07A0-94DB-E0BCB99AB310}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{F7DBB5C2-E444-E46A-5451-2F4C0296626A}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

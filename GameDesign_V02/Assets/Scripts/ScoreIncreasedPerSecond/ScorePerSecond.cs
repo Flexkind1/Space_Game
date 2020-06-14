@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class ScorePerSecond : MonoBehaviour
@@ -11,6 +12,9 @@ public class ScorePerSecond : MonoBehaviour
     public float scoreAmount;
     public float pointIncreasedPerSecond;
     public static int EndScore;
+
+    public Text HighscoreEndscreen;
+    public Text YourScore;
 
 
     public int highScore; //
@@ -39,12 +43,12 @@ public class ScorePerSecond : MonoBehaviour
             StartHighscore();
         }*/
 
-        if (ScoringSystem.theScore < 2)
+        if (ScoringSystem.theScore < 15)
         {
             Scorelaeuft();
         }
 
-        if (ScoringSystem.theScore >= 2)
+        if (ScoringSystem.theScore >= 15)
         {
             Gewonnen();
             UpdateHighscore();
@@ -53,7 +57,7 @@ public class ScorePerSecond : MonoBehaviour
 
         void Scorelaeuft()
         {
-            scoreText.text = (int)scoreAmount + "Score";
+            scoreText.text = " Your current time: " + (int)scoreAmount;
             scoreAmount += pointIncreasedPerSecond * Time.deltaTime;
         }
 
@@ -64,6 +68,10 @@ public class ScorePerSecond : MonoBehaviour
             EndScore = (int)scoreAmount;
             Debug.Log(EndScore);
             //other.UpdateHighscore();
+            scoreText.text = "";
+            HighscoreEndscreen.text = "" + PlayerPrefs.GetInt("Highscore");
+            YourScore.text = "" + EndScore;
+
             UpdateHighscore();
 
             PlayerPrefs.SetInt("Highscore", highScore);

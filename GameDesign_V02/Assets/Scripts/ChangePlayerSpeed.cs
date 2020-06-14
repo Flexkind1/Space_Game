@@ -6,11 +6,15 @@ public class ChangePlayerSpeed : MonoBehaviour
 {
     [Range(1f, 20f)]
     public float newPlayerSpeed;
+    public GameObject Spieler;
+    //public ThirdPersonMovement funktion;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // newPlayerSpeed = GameObject.FindWithTag("player").GetComponent<ThirdPersonMovement>().speed;
+       //ThirdPersonMovement sn = Spieler.GetComponent<ThirdPersonMovement>().SpielerLangsam();
     }
 
     // Update is called once per frame
@@ -21,19 +25,25 @@ public class ChangePlayerSpeed : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
-        {
-            playermotor playerMotor = other.gameObject.GetComponent<playermotor>();
-            playerMotor.ChangeAgentSpeed(newPlayerSpeed);
-        }
+        //if(other.gameObject.tag == "Player")
+
+        //playermotor playerMotor = other.gameObject.GetComponent<playermotor>();
+        //playerMotor.ChangeAgentSpeed(newPlayerSpeed);
+
+        
+        Debug.Log("Langsam");
+        Spieler.GetComponent<ThirdPersonMovement>().SpielerLangsam();
+        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        this.gameObject.GetComponent<BoxCollider>().enabled = false;
     }
 
-    private void OnTriggerExit(Collider other)
+   /* private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            playermotor playerMotor = other.gameObject.GetComponent<playermotor>();
-            playerMotor.ResetAgentSpeed();
+            ChangePlayerSpeed.
+            //playermotor playerMotor = other.gameObject.GetComponent<playermotor>();
+           // playerMotor.ResetAgentSpeed();
         }
-    }
+    }*/
 }

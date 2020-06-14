@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ChangePlayerSpeed.cs" />
+    <Compile Include="Assets\Scripts\ChangePlayerSpeedSchnell.cs" />
     <Compile Include="Assets\Scripts\DragAndDrop.cs" />
     <Compile Include="Assets\Scripts\FinishScreen\FinishDisplayScore.cs" />
     <Compile Include="Assets\Scripts\FinishScreen\LevelButtonManager.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Scripts\New3rdPerson\ThirdPersonMovement.cs" />
     <Compile Include="Assets\Scripts\ScoreIncreasedPerSecond\ScorePerSecond.cs" />
     <Compile Include="Assets\Scripts\ScoreScripts\CollectObject.cs" />
     <Compile Include="Assets\Scripts\ScoreScripts\FinishScreen.cs" />
@@ -82,8 +84,10 @@
     <Compile Include="Assets\Scripts\Spawn\SpawnLangsamTrigger.cs" />
     <Compile Include="Assets\Scripts\Spawn\SpawnSchnellTrigger.cs" />
     <Compile Include="Assets\Scripts\Spawn\SpawnSpaceship.cs" />
-    <Compile Include="Assets\Scripts\Teleport.cs" />
+    <Compile Include="Assets\Scripts\Teleport\NEUteleport.cs" />
     <Compile Include="Assets\Scripts\TextInteraktion.cs" />
+    <Compile Include="Assets\Scripts\boostSpawn.cs" />
+    <Compile Include="Assets\Scripts\boostSpawn1.cs" />
     <Compile Include="Assets\Scripts\player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\player\cameracontroller3RDperson.cs" />
     <Compile Include="Assets\Scripts\player\playercontroller.cs" />
@@ -211,6 +215,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -743,6 +753,16 @@
     <Reference Include="Boo.Lang">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{40F1F0F4-8B9F-07A0-94DB-E0BCB99AB310}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{F7DBB5C2-E444-E46A-5451-2F4C0296626A}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
