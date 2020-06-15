@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.TerrainAPI;
+using UnityEngine.AI;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
 
     public Transform cam;
+
+    Animator animator;
 
     float speed = 15f;
 
@@ -21,10 +24,13 @@ public class ThirdPersonMovement : MonoBehaviour
     public LayerMask groundMask;
     bool isGrounded;
     
+    
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        animator = GetComponentInChildren<Animator>();
+        
        
     }
     void Update()
@@ -53,9 +59,15 @@ public class ThirdPersonMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
 
+       /* if(horizontal == 0 && vertical == 0)
+        {
+            speed = 0;
+        }*/
+      
+
         controller.Move(velocity * Time.deltaTime);
 
-
+        animator.SetFloat("Speed", speed);
     }
     public void SpielerLangsam()
     {
@@ -76,4 +88,5 @@ public class ThirdPersonMovement : MonoBehaviour
         speed = 25f;
         Invoke("ResetPlayerSpeed", 3);
     }
+
 }

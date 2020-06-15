@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
-        highscoreText.text = "Highscore: " + PlayerPrefs.GetInt("Highscore");
+        highscoreText.text = "Highscore: " + PlayerPrefs.GetInt("Highscore", 500);
     }
     public void PlayGame ()
     {

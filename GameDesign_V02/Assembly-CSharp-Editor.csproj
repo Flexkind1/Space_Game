@@ -80,6 +80,9 @@
     <Reference Include="Unity.TerrainTools">
       <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
       <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
@@ -119,6 +122,9 @@
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
@@ -133,12 +139,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/FS4/GAME/GITHUB/Space_Game/GameDesign_V02/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

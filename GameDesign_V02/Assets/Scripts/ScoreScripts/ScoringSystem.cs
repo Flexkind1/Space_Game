@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoringSystem : MonoBehaviour
 {
 
-    public GameObject scoreText;
+    // public GameObject scoreText;
+    public TextMeshProUGUI scoreText;
     public static int theScore;
    
     public CollectObject[] AllCollectObjects;
@@ -37,10 +39,10 @@ public class ScoringSystem : MonoBehaviour
 
     void Update ()
     {
-        
-        
-        scoreText.GetComponent<Text>().text = " Raumschiffteile: " + theScore + "/15";
-      
+
+
+        // scoreText.GetComponent<Text>().text = " Raumschiffteile: " + theScore + "/15";
+        scoreText.text = "Raumschiffteile: " + theScore + "/15";
 
     }
 

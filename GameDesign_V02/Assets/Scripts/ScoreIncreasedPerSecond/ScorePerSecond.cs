@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
@@ -8,13 +9,13 @@ public class ScorePerSecond : MonoBehaviour
 {
     public static ScorePerSecond instance; //
 
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
     public float scoreAmount;
     public float pointIncreasedPerSecond;
     public static int EndScore;
 
-    public Text HighscoreEndscreen;
-    public Text YourScore;
+    public TextMeshProUGUI HighscoreEndscreen;
+    public TextMeshProUGUI YourScore;
 
 
     public int highScore; //
@@ -31,7 +32,8 @@ public class ScorePerSecond : MonoBehaviour
     {
         scoreAmount = 0f;
         pointIncreasedPerSecond = 1f;
-        highScore = PlayerPrefs.GetInt("Highscore");
+        // highScore = PlayerPrefs.GetInt("Highscore"); 
+        highScore = PlayerPrefs.GetInt("Highscore", 500);
             
     }
 
@@ -57,7 +59,7 @@ public class ScorePerSecond : MonoBehaviour
 
         void Scorelaeuft()
         {
-            scoreText.text = " Your current time: " + (int)scoreAmount;
+            scoreText.text = " Your Time: " + (int)scoreAmount;
             scoreAmount += pointIncreasedPerSecond * Time.deltaTime;
         }
 
