@@ -13,23 +13,32 @@ public class ScoringSystem : MonoBehaviour
    
     public CollectObject[] AllCollectObjects;
 
-
+    private void Awake()
+    {
+     //AllCollectObjects = 
+    }
     void Start()
     {
         theScore = 0;
 
         //Array mischen dass Reihenfolge zufällig ist
         //Mit for-Schleife alle überflüssigen Objekte löschen#
-      
 
+        for (int apos = 0; apos < AllCollectObjects.Length; apos++)
+        {
+            CollectObject tmp = AllCollectObjects[apos];
+            int r = Random.Range(apos, AllCollectObjects.Length);
+            AllCollectObjects[apos] = AllCollectObjects[r];
+            AllCollectObjects[r] = tmp;
+        }
        
 
 
         for (int i = 0; i < 15; i++)
         {
-            int randomIndex = Random.Range(0, AllCollectObjects.Length);
-            AllCollectObjects[randomIndex].GetComponent<MeshRenderer>().enabled = false;
-            AllCollectObjects[randomIndex].GetComponent<BoxCollider>().enabled = false;
+           // int randomIndex = Random.Range(0, AllCollectObjects.Length);
+            AllCollectObjects[i].GetComponent<MeshRenderer>().enabled = false;
+            AllCollectObjects[i].GetComponent<BoxCollider>().enabled = false;
         }
 
         
@@ -46,4 +55,7 @@ public class ScoringSystem : MonoBehaviour
 
     }
 
+   
+        
+     
 }

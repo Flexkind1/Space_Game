@@ -13,6 +13,11 @@ public class ThirdPersonMovement : MonoBehaviour
     Animator animator;
 
     float speed = 15f;
+    float CurrentSpeed = 15f;
+
+    // float lerpTime = 1f;
+    // float currentLerpTime;
+    float LerpTime;
 
     public float turnSmoothTime = 0.1f;
     float turnsmoothvelocity;
@@ -30,11 +35,30 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         animator = GetComponentInChildren<Animator>();
-        
+        LerpTime = 0f; 
        
     }
     void Update()
     {
+
+        //increment timer once per frame
+        /* currentLerpTime += Time.deltaTime;
+         if (currentLerpTime > lerpTime)
+         {
+             currentLerpTime = lerpTime;
+         }*/
+
+        //lerp!
+
+        LerpTime += Time.deltaTime;
+        if(LerpTime > 1)
+        {
+            LerpTime = 0;
+        }
+        //Debug.Log(LerpTime);
+        Debug.Log("speed:" + speed);
+
+
         isGrounded = Physics.CheckSphere(GroundCheck.position, groundDistance, groundMask);
 
         if(isGrounded && velocity.y < 0)
@@ -56,7 +80,7 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);       
         }
-
+        animator.SetFloat("Speed", speed * direction.magnitude);
         velocity.y += gravity * Time.deltaTime;
 
        /* if(horizontal == 0 && vertical == 0)
@@ -67,26 +91,59 @@ public class ThirdPersonMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        animator.SetFloat("Speed", speed);
+        
     }
+
     public void SpielerLangsam()
     {
-       speed = 5f;
-       Debug.Log("versuch");
-       Invoke("ResetPlayerSpeed", 3);
 
+        // LerpTime = 0;
+        // StartCoroutine(NormaleV)
+        // for(int i = 0; i<9; i++)
+        // {
+        //     speed = Mathf.Lerp(15f, 5f, LerpTime);
+        //  }
+
+        speed = 5f;
+        Invoke("ResetPlayerSpeed", 3);
+        
 
     }
 
     public void ResetPlayerSpeed()
     {
-        speed = 15f;
+        //float perc = currentLerpTime / lerpTime;
+        //Lerptimeupdate();
+         speed = 15f;
+       
+        
+       // speed = Mathf.Lerp(CurrentSpeed , 15f, LerpTime);
+       
+       
     }
 
     public void SpielerSchnell()
     {
         speed = 25f;
+        //Mathf.Lerp(CurrentSpeed, 25f, Time.deltaTime);
+        // CurrentSpeed = 25f;
         Invoke("ResetPlayerSpeed", 3);
     }
 
+   /* void Lerptimeupdate()
+    {
+        if (LerpTime < 1f)
+        {
+            LerpTime += 0.1f;
+        }
+        else
+        {
+            LerpTime = 0f;
+        }
+    }*/
+
+   /* IEnumerator NormaleV(float time)
+    {
+       
+    }*/
 }
