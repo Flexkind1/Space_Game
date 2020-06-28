@@ -200,6 +200,9 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
@@ -208,6 +211,9 @@
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
@@ -226,12 +232,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/UNITY/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
