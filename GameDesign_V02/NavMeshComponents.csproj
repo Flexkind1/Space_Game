@@ -280,6 +280,12 @@
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
+    <Reference Include="MTE_script">
+      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Assets/MTE/Plugins/MTE/MTE_script.dll</HintPath>
+    </Reference>
+    <Reference Include="MTE">
+      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Assets/MTE/Plugins/Editor/MTE/MTE.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/UNITY/2019.3.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
     </Reference>
