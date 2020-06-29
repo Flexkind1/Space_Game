@@ -350,14 +350,14 @@
     <Reference Include="SourceUnityLib">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Assets/Allegorithmic/Plugins/Substance/Substance Source/Editor/SourceUnityLib.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+    <Reference Include="MTE">
+      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Assets/MTE/Plugins/Editor/MTE/MTE.dll</HintPath>
     </Reference>
     <Reference Include="MTE_script">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Assets/MTE/Plugins/MTE/MTE_script.dll</HintPath>
     </Reference>
-    <Reference Include="MTE">
-      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Assets/MTE/Plugins/Editor/MTE/MTE.dll</HintPath>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/PackageCache/com.unity.render-pipelines.core@7.1.8/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
