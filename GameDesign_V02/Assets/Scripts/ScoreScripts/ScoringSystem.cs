@@ -15,7 +15,7 @@ public class ScoringSystem : MonoBehaviour
 
     private void Awake()
     {
-     //AllCollectObjects = 
+        //AllCollectObjects = GameObject.FindGameObjectsWithTag("_3Raumschiffteile-Turn");
     }
     void Start()
     {

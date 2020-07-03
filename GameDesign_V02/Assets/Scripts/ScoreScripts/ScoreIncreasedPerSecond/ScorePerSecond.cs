@@ -17,6 +17,9 @@ public class ScorePerSecond : MonoBehaviour
     public TextMeshProUGUI HighscoreEndscreen;
     public TextMeshProUGUI YourScore;
 
+    public TextMeshProUGUI NewHighscore;
+    public TextMeshProUGUI Highscore;
+
 
     public int highScore; //
 
@@ -89,6 +92,8 @@ public class ScorePerSecond : MonoBehaviour
             {
                 highScore = EndScore;
                 PlayerPrefs.SetInt("Highscore", highScore);
+                //Highscore.gameObject.SetActive(false);
+               // NewHighscore.gameObject.SetActive(true);
             }
            
            

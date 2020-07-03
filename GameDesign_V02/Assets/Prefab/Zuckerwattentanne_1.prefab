@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 673705816191446445}
   - component: {fileID: 9145168401549197975}
   - component: {fileID: 2291226041940705032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 620759629641794739}
   - component: {fileID: 3990881391625932995}
   - component: {fileID: 7226437580802850073}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 1646423610706742240}
   - component: {fileID: 8775457623574585078}
   - component: {fileID: 5324949404732161221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1201888548110072851}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Baumsatz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 814856454280448718}
   - component: {fileID: 8580917121992608509}
   - component: {fileID: 5324949405453068436}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 908796439223033420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Zuckerwattentanne_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 2708842595608560678}
   - component: {fileID: 4671944312872142323}
   - component: {fileID: 5176249275765388659}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 5691261095752415021}
   - component: {fileID: 8951963680056598940}
   - component: {fileID: 8361628552312164977}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule003
   m_TagString: Untagged
   m_Icon: {fileID: 0}

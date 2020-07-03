@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 939624811994125755}
   - component: {fileID: 8111529462864577175}
   - component: {fileID: 3383870677053903924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule085
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3198539288267327770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Zuckerwattentanne_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 1021237687714745894}
   - component: {fileID: 2737008726036294606}
   - component: {fileID: 3896430754889409193}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule087
   m_TagString: Untagged
   m_Icon: {fileID: 0}
