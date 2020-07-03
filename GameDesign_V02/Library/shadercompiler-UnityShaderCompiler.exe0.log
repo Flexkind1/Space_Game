@@ -1,2 +1,596 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+Cmd: preprocess
+  insize=2749 outsize=2307 ok=1
+Cmd: preprocess
+  insize=16589 outsize=13162 ok=1
+Cmd: preprocess
+  insize=3003 outsize=583 ok=1
+Cmd: preprocess
+  insize=1579 outsize=233 ok=1
+Cmd: preprocess
+  insize=2699 outsize=2906 ok=1
+Cmd: preprocess
+  insize=1431 outsize=281 ok=1
+Cmd: preprocessCompute
+  insize=18709 outsize=18731 ok=1
+Cmd: preprocess
+  insize=6706 outsize=1402 ok=1
+Cmd: preprocess
+  insize=3755 outsize=2063 ok=1
+Cmd: preprocess
+  insize=36279 outsize=11203 ok=1
+Cmd: preprocess
+  insize=7844 outsize=2494 ok=1
+Cmd: preprocess
+  insize=7385 outsize=1698 ok=1
+Cmd: preprocessCompute
+  insize=4444 outsize=4443 ok=1
+Cmd: preprocess
+  insize=4418 outsize=2117 ok=1
+Cmd: preprocessCompute
+  insize=1439 outsize=1438 ok=1
+Cmd: preprocess
+  insize=3195 outsize=2419 ok=1
+Cmd: preprocess
+  insize=1268 outsize=443 ok=1
+Cmd: preprocess
+  insize=5828 outsize=2007 ok=1
+Cmd: preprocess
+  insize=4195 outsize=2719 ok=1
+Cmd: preprocessCompute
+  insize=1220 outsize=1226 ok=1
+Cmd: preprocess
+  insize=5607 outsize=2433 ok=1
+Cmd: preprocess
+  insize=1867 outsize=322 ok=1
+Cmd: preprocess
+  insize=44224 outsize=20626 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (410): redefinition of '_ShadowBias'\nCompiling Vertex program with UNITY_PASS_SHADOWCASTER
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
+  api=4 type=0 insize=4066 outsize=0 kw=UNITY_PASS_SHADOWCASTER pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=0
+Cmd: preprocess
+  insize=1315 outsize=493 ok=1
+Cmd: preprocess
+  insize=6257 outsize=384 ok=1
+Cmd: preprocess
+  insize=2883 outsize=2999 ok=1
+Cmd: preprocess
+  insize=2507 outsize=1111 ok=1
+Cmd: preprocess
+  error: 2 plat 21 at (2): failed to open source file: 'HLSLSupport.cginc'
+  error: 2 plat 21 at (6): failed to open source file: 'UnityShaderVariables.cginc'
+  error: 2 plat 21 at (7): failed to open source file: 'UnityShaderUtilities.cginc'
+  error: 2 plat 21 at (8): failed to open source file: 'Lighting.cginc'
+  error: 2 plat 21 at (9): failed to open source file: 'UnityCG.cginc'
+  error: 2 plat 21 at (10): failed to open source file: 'Lighting.cginc'
+  insize=3456 outsize=958 ok=0
+Cmd: preprocess
+  insize=4091 outsize=758 ok=1
+Cmd: preprocess
+  insize=763 outsize=3102 ok=1
+Cmd: preprocess
+  insize=4377 outsize=462 ok=1
+Cmd: preprocess
+  insize=2041 outsize=371 ok=1
+Cmd: preprocess
+  insize=6462 outsize=1315 ok=1
+Cmd: preprocess
+  insize=3420 outsize=360 ok=1
+Cmd: preprocess
+  insize=3274 outsize=621 ok=1
+Cmd: preprocess
+  insize=5167 outsize=2274 ok=1
+Cmd: preprocessCompute
+  insize=1499 outsize=1505 ok=1
+Cmd: preprocess
+  insize=1760 outsize=643 ok=1
+Cmd: preprocess
+  insize=2453 outsize=662 ok=1
+Cmd: preprocess
+  insize=48185 outsize=23045 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (433): redefinition of '_ShadowBias'\nCompiling Vertex program with UNITY_PASS_SHADOWCASTER
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
+  api=4 type=0 insize=4204 outsize=0 kw=UNITY_PASS_SHADOWCASTER pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=0
+Cmd: preprocess
+  insize=1425 outsize=3755 ok=1
+Cmd: preprocess
+  insize=3608 outsize=1262 ok=1
+Cmd: preprocess
+  insize=3719 outsize=3226 ok=1
+Cmd: preprocessCompute
+  insize=5024 outsize=5032 ok=1
+Cmd: preprocess
+  insize=2924 outsize=4012 ok=1
+Cmd: preprocess
+  insize=5561 outsize=2426 ok=1
+Cmd: preprocess
+  insize=2395 outsize=3882 ok=1
+Cmd: preprocess
+  insize=3123 outsize=4049 ok=1
+Cmd: preprocess
+  insize=3353 outsize=2041 ok=1
+Cmd: preprocessCompute
+  insize=1858 outsize=1864 ok=1
+Cmd: preprocess
+  insize=3519 outsize=3110 ok=1
+Cmd: preprocess
+  insize=7490 outsize=1486 ok=1
+Cmd: preprocessCompute
+  insize=1523 outsize=1522 ok=1
+Cmd: preprocessCompute
+  insize=1366 outsize=1372 ok=1
+Cmd: preprocess
+  insize=3868 outsize=2059 ok=1
+Cmd: preprocess
+  insize=18513 outsize=2654 ok=1
+Cmd: preprocess
+  insize=1749 outsize=1131 ok=1
+Cmd: preprocess
+  insize=4774 outsize=2128 ok=1
+Cmd: preprocess
+  insize=7550 outsize=4940 ok=1
+Cmd: preprocess
+  insize=9516 outsize=4562 ok=1
+Cmd: preprocess
+  insize=3682 outsize=237 ok=1
+Cmd: preprocess
+  insize=4264 outsize=887 ok=1
+Cmd: preprocess
+  insize=5379 outsize=510 ok=1
+Cmd: preprocessCompute
+  insize=2530 outsize=2529 ok=1
+Cmd: preprocess
+  insize=2385 outsize=493 ok=1
+Cmd: preprocess
+  insize=4876 outsize=3417 ok=1
+Cmd: preprocess
+  insize=2243 outsize=428 ok=1
+Cmd: preprocess
+  insize=4244 outsize=1993 ok=1
+Cmd: preprocess
+  insize=46863 outsize=22434 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (423): redefinition of '_ShadowBias'\nCompiling Vertex program with UNITY_PASS_SHADOWCASTER
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
+  api=4 type=0 insize=4135 outsize=0 kw=UNITY_PASS_SHADOWCASTER pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=0
+Cmd: preprocess
+  insize=24103 outsize=4770 ok=1
+Cmd: preprocess
+  insize=4811 outsize=2124 ok=1
+Cmd: preprocessCompute
+  insize=3152 outsize=3158 ok=1
+Cmd: preprocessCompute
+  insize=11166 outsize=11176 ok=1
+Cmd: preprocess
+  insize=1231 outsize=322 ok=1
+Cmd: preprocessCompute
+  insize=5013 outsize=5015 ok=1
+Cmd: preprocess
+  insize=4028 outsize=2114 ok=1
+Cmd: preprocess
+  insize=1203 outsize=4106 ok=1
+Cmd: preprocess
+  insize=3670 outsize=1943 ok=1
+Cmd: preprocess
+  insize=5693 outsize=371 ok=1
+Cmd: preprocessCompute
+  insize=2114 outsize=2120 ok=1
+Cmd: preprocess
+  insize=1495 outsize=207 ok=1
+Cmd: preprocess
+  insize=5531 outsize=1980 ok=1
+Cmd: preprocess
+  insize=6686 outsize=379 ok=1
+Cmd: preprocess
+  insize=3467 outsize=550 ok=1
+Cmd: preprocess
+  insize=6998 outsize=4353 ok=1
+Cmd: preprocess
+  insize=3615 outsize=2669 ok=1
+Cmd: preprocess
+  insize=1221 outsize=3707 ok=1
+Cmd: preprocessCompute
+  insize=838 outsize=839 ok=1
+Cmd: preprocess
+  insize=3365 outsize=414 ok=1
+Cmd: preprocessCompute
+  insize=1320 outsize=1321 ok=1
+Cmd: preprocess
+  insize=3242 outsize=1030 ok=1
+Cmd: preprocess
+  insize=2057 outsize=2670 ok=1
+Cmd: preprocess
+  insize=3205 outsize=1774 ok=1
+Cmd: preprocess
+  insize=3303 outsize=360 ok=1
+Cmd: preprocess
+  insize=39173 outsize=16960 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (385): redefinition of '_ShadowBias'\nCompiling Vertex program with UNITY_PASS_SHADOWCASTER
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
+  api=4 type=0 insize=3951 outsize=0 kw=UNITY_PASS_SHADOWCASTER pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=0
+Cmd: preprocess
+  insize=7251 outsize=1698 ok=1
+Cmd: preprocess
+  insize=3151 outsize=1921 ok=1
+Cmd: preprocess
+  insize=3670 outsize=2648 ok=1
+Cmd: preprocess
+  insize=6103 outsize=2563 ok=1
+Cmd: preprocess
+  insize=2796 outsize=2314 ok=1
+Cmd: preprocess
+  insize=2869 outsize=325 ok=1
+Cmd: preprocess
+  insize=746 outsize=340 ok=1
+Cmd: preprocess
+  insize=2867 outsize=434 ok=1
+Cmd: preprocess
+  insize=1227 outsize=298 ok=1
+Cmd: preprocess
+  insize=6744 outsize=924 ok=1
+Cmd: preprocess
+  insize=4222 outsize=2115 ok=1
+Cmd: preprocess
+  insize=12821 outsize=4917 ok=1
+Cmd: preprocess
+  insize=3320 outsize=826 ok=1
+Cmd: preprocess
+  insize=3169 outsize=280 ok=1
+Cmd: preprocess
+  insize=2681 outsize=2880 ok=1
+Cmd: preprocess
+  insize=3962 outsize=392 ok=1
+Cmd: preprocess
+  insize=1648 outsize=490 ok=1
+Cmd: preprocess
+  insize=1665 outsize=236 ok=1
+Cmd: preprocess
+  insize=6633 outsize=4122 ok=1
+Cmd: preprocess
+  insize=5757 outsize=356 ok=1
+Cmd: preprocess
+  insize=3197 outsize=1434 ok=1
+Cmd: preprocess
+  insize=6056 outsize=2508 ok=1
+Cmd: preprocess
+  insize=3889 outsize=509 ok=1
+Cmd: preprocess
+  insize=9585 outsize=369 ok=1
+Cmd: preprocess
+  insize=4922 outsize=733 ok=1
+Cmd: preprocess
+  insize=2706 outsize=232 ok=1
+Cmd: preprocess
+  insize=4453 outsize=3687 ok=1
+Cmd: preprocess
+  insize=3021 outsize=1733 ok=1
+Cmd: preprocessCompute
+  insize=2128 outsize=2134 ok=1
+Cmd: preprocess
+  insize=3554 outsize=1946 ok=1
+Cmd: preprocess
+  insize=12668 outsize=566 ok=1
+Cmd: preprocess
+  insize=3759 outsize=647 ok=1
+Cmd: preprocess
+  insize=1074 outsize=379 ok=1
+Cmd: preprocess
+  insize=2158 outsize=3843 ok=1
+Cmd: preprocess
+  insize=3606 outsize=1310 ok=1
+Cmd: preprocess
+  insize=48222 outsize=18787 ok=1
+Cmd: preprocess
+  insize=10875 outsize=4001 ok=1
+Cmd: preprocess
+  insize=1066 outsize=3668 ok=1
+Cmd: preprocess
+  insize=3249 outsize=2483 ok=1
+Cmd: preprocess
+  insize=3169 outsize=3081 ok=1
+Cmd: preprocess
+  insize=3046 outsize=1955 ok=1
+Cmd: preprocess
+  insize=34116 outsize=21742 ok=1
+Cmd: preprocess
+  insize=3036 outsize=4009 ok=1
+Cmd: preprocess
+  insize=2127 outsize=357 ok=1
+Cmd: preprocess
+  insize=2353 outsize=363 ok=1
+Cmd: preprocess
+  insize=6464 outsize=2622 ok=1
+Cmd: preprocess
+  insize=3339 outsize=1540 ok=1
+Cmd: preprocess
+  insize=3339 outsize=365 ok=1
+Cmd: preprocess
+  insize=2371 outsize=667 ok=1
+Cmd: preprocess
+  insize=4560 outsize=481 ok=1
+Cmd: preprocess
+  insize=5713 outsize=2352 ok=1
+Cmd: preprocess
+  insize=4387 outsize=2752 ok=1
+Cmd: preprocess
+  insize=3267 outsize=1050 ok=1
+Cmd: preprocess
+  insize=2937 outsize=365 ok=1
+Cmd: preprocess
+  insize=3609 outsize=2991 ok=1
+Cmd: preprocess
+  insize=12034 outsize=4575 ok=1
+Cmd: preprocess
+  insize=41330 outsize=14731 ok=1
+Cmd: preprocess
+  insize=2265 outsize=452 ok=1
+Cmd: preprocess
+  insize=7692 outsize=3892 ok=1
+Cmd: preprocess
+  insize=6030 outsize=2508 ok=1
+Cmd: preprocessCompute
+  insize=1251 outsize=1250 ok=1
+Cmd: preprocess
+  insize=12338 outsize=1048 ok=1
+Cmd: preprocess
+  insize=4278 outsize=2756 ok=1
+Cmd: preprocess
+  insize=1613 outsize=3871 ok=1
+Cmd: preprocess
+  insize=2967 outsize=2964 ok=1
+Cmd: preprocess
+  insize=2070 outsize=769 ok=1
+Cmd: preprocess
+  insize=4449 outsize=2656 ok=1
+Cmd: preprocess
+  insize=12359 outsize=1982 ok=1
+Cmd: preprocess
+  insize=2846 outsize=1837 ok=1
+Cmd: preprocess
+  insize=628 outsize=231 ok=1
+Cmd: preprocess
+  insize=5080 outsize=2140 ok=1
+Cmd: preprocess
+  insize=3179 outsize=2454 ok=1
+Cmd: preprocess
+  insize=7382 outsize=421 ok=1
+Cmd: preprocessCompute
+  insize=4918 outsize=4919 ok=1
+Cmd: preprocess
+  insize=1491 outsize=2220 ok=1
+Cmd: preprocess
+  insize=2393 outsize=355 ok=1
+Cmd: preprocess
+  insize=2101 outsize=3830 ok=1
+Cmd: preprocess
+  insize=1091 outsize=185 ok=1
+Cmd: preprocessCompute
+  insize=10326 outsize=10338 ok=1
+Cmd: preprocess
+  insize=2495 outsize=2823 ok=1
+Cmd: preprocess
+  insize=1494 outsize=339 ok=1
+Cmd: preprocess
+  insize=4317 outsize=309 ok=1
+Cmd: preprocess
+  insize=6843 outsize=1272 ok=1
+Cmd: preprocess
+  insize=4246 outsize=2000 ok=1
+Cmd: preprocess
+  insize=2581 outsize=863 ok=1
+Cmd: preprocess
+  insize=5824 outsize=1290 ok=1
+Cmd: preprocess
+  insize=7433 outsize=1701 ok=1
+Cmd: preprocess
+  insize=1719 outsize=372 ok=1
+Cmd: preprocess
+  insize=3599 outsize=2618 ok=1
+Cmd: preprocess
+  insize=2565 outsize=3942 ok=1
+Cmd: preprocess
+  insize=3013 outsize=4054 ok=1
+Cmd: preprocess
+  insize=3825 outsize=1995 ok=1
+Cmd: preprocess
+  insize=4508 outsize=286 ok=1
+Cmd: preprocess
+  insize=7983 outsize=2095 ok=1
+Cmd: preprocess
+  insize=34736 outsize=12979 ok=1
+Cmd: preprocess
+  insize=11823 outsize=980 ok=1
+Cmd: preprocess
+  insize=6889 outsize=1126 ok=1
+Cmd: preprocess
+  insize=4250 outsize=592 ok=1
+Cmd: preprocessCompute
+  insize=3526 outsize=3532 ok=1
+Cmd: preprocess
+  insize=978 outsize=231 ok=1
+Cmd: preprocess
+  insize=14215 outsize=5377 ok=1
+Cmd: preprocessCompute
+  insize=3168 outsize=3174 ok=1
+Cmd: preprocess
+  insize=2244 outsize=4561 ok=1
+Cmd: preprocess
+  insize=38924 outsize=13087 ok=1
+Cmd: preprocess
+  insize=8019 outsize=2766 ok=1
+Cmd: preprocess
+  insize=34495 outsize=11630 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (343): redefinition of '_ShadowBias'\nCompiling Vertex program with UNITY_PASS_SHADOWCASTER
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
+  api=4 type=0 insize=3655 outsize=0 kw=UNITY_PASS_SHADOWCASTER pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=0
+Cmd: preprocessCompute
+  insize=928 outsize=927 ok=1
+Cmd: preprocess
+  insize=8662 outsize=379 ok=1
+Cmd: preprocess
+  insize=3338 outsize=1536 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1703 outsize=1246 kw=LOCAL_SPACE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1703 outsize=1826 kw=LOCAL_SPACE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=796 outsize=566 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=796 outsize=182 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: preprocess
+  insize=3219 outsize=322 ok=1
+Cmd: preprocess
+  insize=14652 outsize=5526 ok=1
+Cmd: preprocess
+  insize=1772 outsize=388 ok=1
+Cmd: preprocess
+  insize=428 outsize=428 ok=1
+Cmd: preprocess
+  insize=10093 outsize=1114 ok=1
+Cmd: preprocess
+  insize=4178 outsize=709 ok=1
+Cmd: preprocessCompute
+  insize=1953 outsize=1957 ok=1
+Cmd: preprocess
+  insize=2765 outsize=4059 ok=1
+Cmd: preprocess
+  insize=2326 outsize=3871 ok=1
+Cmd: preprocessCompute
+  insize=5587 outsize=5591 ok=1
+Cmd: preprocess
+  insize=8294 outsize=3719 ok=1
+Cmd: preprocess
+  insize=3715 outsize=1786 ok=1
+Cmd: preprocess
+  insize=11785 outsize=4578 ok=1
+Cmd: preprocess
+  insize=2194 outsize=2710 ok=1
+Cmd: preprocess
+  insize=1414 outsize=393 ok=1
+Cmd: preprocess
+  insize=3391 outsize=1815 ok=1
+Cmd: preprocess
+  insize=1188 outsize=411 ok=1
+Cmd: preprocess
+  insize=10864 outsize=3992 ok=1
+Cmd: preprocess
+  insize=2158 outsize=462 ok=1
+Cmd: preprocess
+  insize=6801 outsize=3266 ok=1
+Cmd: preprocess
+  insize=3652 outsize=1674 ok=1
+Cmd: preprocess
+  insize=5154 outsize=781 ok=1
+Cmd: preprocess
+  insize=2997 outsize=577 ok=1
+Cmd: preprocess
+  insize=12266 outsize=4496 ok=1
+Cmd: preprocess
+  insize=8951 outsize=1067 ok=1
+Cmd: preprocess
+  insize=2523 outsize=3910 ok=1
+Cmd: preprocess
+  insize=2972 outsize=1318 ok=1
+Cmd: preprocess
+  insize=5213 outsize=2280 ok=1
+Cmd: preprocess
+  insize=14514 outsize=5478 ok=1
+Cmd: preprocess
+  insize=4074 outsize=1999 ok=1
+Cmd: preprocess
+  insize=3092 outsize=358 ok=1
+Cmd: preprocess
+  insize=2583 outsize=3925 ok=1
+Cmd: preprocess
+  insize=4306 outsize=2717 ok=1
+Cmd: preprocess
+  insize=28179 outsize=9323 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (325): redefinition of '_ShadowBias'\nCompiling Vertex program with UNITY_PASS_SHADOWCASTER
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
+  api=4 type=0 insize=3761 outsize=0 kw=UNITY_PASS_SHADOWCASTER pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=0
+Cmd: preprocess
+  insize=3207 outsize=1205 ok=1
+Cmd: preprocess
+  insize=3750 outsize=384 ok=1
+Cmd: preprocess
+  insize=1972 outsize=301 ok=1
+Cmd: preprocess
+  insize=2700 outsize=337 ok=1
+Cmd: preprocessCompute
+  insize=10214 outsize=10215 ok=1
+Cmd: preprocess
+  insize=1409 outsize=310 ok=1
+Cmd: preprocess
+  insize=143074 outsize=21978 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (199): failed to open source file: 'Packages/com.unity.render-pipelines.high-definition/Runtime/RenderPipeline/ShaderPass/FragInputs.hlsl'\nCompiling Vertex program with DECALS_OFF
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
+  api=4 type=0 insize=22627 outsize=0 kw=DECALS_OFF pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=0
+Cmd: preprocess
+  insize=2350 outsize=2750 ok=1
+Cmd: preprocess
+  insize=7870 outsize=2504 ok=1
+Cmd: preprocess
+  insize=4572 outsize=1825 ok=1
+Cmd: preprocess
+  insize=3766 outsize=404 ok=1
+Cmd: preprocess
+  insize=7460 outsize=857 ok=1
+Cmd: preprocess
+  insize=30658 outsize=11214 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (338): redefinition of '_ShadowBias'\nCompiling Vertex program with UNITY_PASS_SHADOWCASTER
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
+  api=4 type=0 insize=3830 outsize=0 kw=UNITY_PASS_SHADOWCASTER pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=0
+Cmd: preprocessCompute
+  insize=1869 outsize=1868 ok=1
+Cmd: preprocessCompute
+  insize=1163 outsize=1165 ok=1
+Cmd: preprocess
+  insize=9163 outsize=2471 ok=1
+Cmd: preprocess
+  insize=4968 outsize=2145 ok=1
+Cmd: preprocess
+  insize=4050 outsize=353 ok=1
+Cmd: preprocess
+  insize=2420 outsize=1129 ok=1
+Cmd: preprocess
+  insize=1491 outsize=2220 ok=1
+Cmd: preprocess
+  insize=2017 outsize=2292 ok=1
+Cmd: preprocess
+  insize=17617 outsize=11846 ok=1
+Cmd: preprocess
+  insize=12797 outsize=4912 ok=1
+Cmd: preprocessCompute
+  insize=6892 outsize=6894 ok=1
+Cmd: preprocessCompute
+  insize=5818 outsize=5820 ok=1
+Cmd: preprocess
+  insize=35869 outsize=630 ok=1
+Cmd: preprocessCompute
+  insize=1969 outsize=1971 ok=1
+Cmd: preprocess
+  insize=72006 outsize=3695 ok=1
+Cmd: preprocess
+  insize=35347 outsize=1903 ok=1
+Cmd: preprocess
+  insize=60031 outsize=2194 ok=1
+Cmd: preprocess
+  insize=88329 outsize=3305 ok=1
+Cmd: preprocess
+  insize=68478 outsize=3771 ok=1
+Cmd: preprocess
+  insize=91007 outsize=3045 ok=1
+Cmd: preprocess
+  insize=63495 outsize=3619 ok=1
+Cmd: preprocess
+  insize=67813 outsize=3314 ok=1
+Cmd: preprocess
+  insize=81500 outsize=3019 ok=1
