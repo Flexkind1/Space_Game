@@ -7,12 +7,12 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    public Text highscoreText;
+    public TextMeshProUGUI highscoreText;
 
 
     void Start()
     {
-        highscoreText.text = "Highscore: " + PlayerPrefs.GetInt("Highscore");
+        highscoreText.text = "Highscore " + PlayerPrefs.GetInt("Highscore");
     }
     public void PlayGame ()
     {

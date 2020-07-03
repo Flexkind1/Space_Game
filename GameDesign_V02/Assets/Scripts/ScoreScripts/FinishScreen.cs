@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
+using TMPro;
 
 public class FinishScreen : MonoBehaviour
 {
     public GameObject FinishDisplay;
     public GameObject Player;
+    public TextMeshProUGUI NewHighscore;
+    public TextMeshProUGUI Highscore;
     
    
     // Start is called before the first frame update
@@ -25,7 +28,9 @@ public class FinishScreen : MonoBehaviour
         {
             FinishDisplay.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
-            
+            Highscore.gameObject.SetActive(false);
+            NewHighscore.gameObject.SetActive(true);
+
 
         }
     }
