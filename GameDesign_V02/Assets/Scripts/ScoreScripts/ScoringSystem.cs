@@ -22,7 +22,7 @@ public class ScoringSystem : MonoBehaviour
         theScore = 0;
 
         //Array mischen dass Reihenfolge zufällig ist
-        //Mit for-Schleife alle überflüssigen Objekte löschen#
+        
 
         for (int apos = 0; apos < AllCollectObjects.Length; apos++)
         {
@@ -31,9 +31,9 @@ public class ScoringSystem : MonoBehaviour
             AllCollectObjects[apos] = AllCollectObjects[r];
             AllCollectObjects[r] = tmp;
         }
-       
 
 
+        //Mit for-Schleife alle überflüssigen Objekte löschen
         for (int i = 0; i < 15; i++)
         {
            // int randomIndex = Random.Range(0, AllCollectObjects.Length);

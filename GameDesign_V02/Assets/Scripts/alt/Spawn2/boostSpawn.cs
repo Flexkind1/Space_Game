@@ -10,8 +10,8 @@ public class boostSpawn : MonoBehaviour
     void Start()
     {
         
-        InvokeRepeating("DestroyBoosts", 1, 0.75f);
-        InvokeRepeating("SpawnBoosts", 1, 0.75f);
+        InvokeRepeating("DestroyBoosts", 1, 1);
+        InvokeRepeating("SpawnBoosts", 2, 1);
     }
 
     void DestroyBoosts()
@@ -20,7 +20,7 @@ public class boostSpawn : MonoBehaviour
         {
             int randomIndex = Random.Range(0, AllBoostZones.Length);
             AllBoostZones[randomIndex].GetComponent<MeshRenderer>().enabled = false;
-            AllBoostZones[randomIndex].GetComponent<BoxCollider>().enabled = false;
+            AllBoostZones[randomIndex].GetComponent<CapsuleCollider>().enabled = false;
         }
     }
 
@@ -30,7 +30,7 @@ public class boostSpawn : MonoBehaviour
         {
             int randomIndex = Random.Range(0, AllBoostZones.Length);
             AllBoostZones[randomIndex].GetComponent<MeshRenderer>().enabled = true;
-            AllBoostZones[randomIndex].GetComponent<BoxCollider>().enabled = true;
+            AllBoostZones[randomIndex].GetComponent<CapsuleCollider>().enabled = true;
         }
     }
 }

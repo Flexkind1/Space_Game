@@ -7,6 +7,9 @@ public class ChangePlayerSpeedSchnell : MonoBehaviour
     [Range(1f, 20f)]
     public float newPlayerSpeed;
     public GameObject Spieler;
+
+    public AudioSource KristallSchnell;
+
     //public ThirdPersonMovement funktion;
     
 
@@ -30,11 +33,11 @@ public class ChangePlayerSpeedSchnell : MonoBehaviour
         //playermotor playerMotor = other.gameObject.GetComponent<playermotor>();
         //playerMotor.ChangeAgentSpeed(newPlayerSpeed);
 
-        
-        
+
+        KristallSchnell.PlayOneShot(KristallSchnell.clip);
         Spieler.GetComponent<ThirdPersonMovement>().SpielerSchnell();
         this.gameObject.GetComponent<MeshRenderer>().enabled = false;
-        this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        this.gameObject.GetComponent<CapsuleCollider>().enabled = false;
     }
 
    /* private void OnTriggerExit(Collider other)

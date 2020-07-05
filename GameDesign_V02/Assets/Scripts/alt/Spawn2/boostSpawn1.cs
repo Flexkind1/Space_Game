@@ -9,18 +9,38 @@ public class boostSpawn1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        InvokeRepeating("DestroyBoosts", 1, 0.75f);
-        InvokeRepeating("SpawnBoosts", 1, 0.75f);
+        //InvokeRepeating("RandomIndex", 1, 1);
+        InvokeRepeating("DestroyBoosts", 1, 1);
+        InvokeRepeating("SpawnBoosts", 2, 1);
     }
+
+
+
+    /*void RandomIndex()
+    {
+        for (int apos = 0; apos < AllBoostZones.Length; apos++)
+        {
+            ChangePlayerSpeedSchnell tmp = AllBoostZones[apos];
+            int r = Random.Range(apos, AllBoostZones.Length);
+            AllBoostZones[apos] = AllBoostZones[r];
+            AllBoostZones[r] = tmp;
+        }
+
+    }*/
+
 
     void DestroyBoosts()
     {
+
         for (int i = 0; i < 6; i++)
         {
             int randomIndex = Random.Range(0, AllBoostZones.Length);
-            AllBoostZones[randomIndex].GetComponent<MeshRenderer>().enabled = false;
-            AllBoostZones[randomIndex].GetComponent<BoxCollider>().enabled = false;
+           /* if (AllBoostZones[randomIndex].GetComponent<MeshRenderer>().enabled == true)
+            {*/
+                AllBoostZones[randomIndex].GetComponent<MeshRenderer>().enabled = false;
+                AllBoostZones[randomIndex].GetComponent<CapsuleCollider>().enabled = false;
+         //   }
+                
         }
     }
 
@@ -29,8 +49,15 @@ public class boostSpawn1 : MonoBehaviour
         for (int i = 0; i < 6; i++)
         {
             int randomIndex = Random.Range(0, AllBoostZones.Length);
-            AllBoostZones[randomIndex].GetComponent<MeshRenderer>().enabled = true;
-            AllBoostZones[randomIndex].GetComponent<BoxCollider>().enabled = true;
+           // if (AllBoostZones[randomIndex].GetComponent<MeshRenderer>().enabled == false)
+           // {
+                AllBoostZones[randomIndex].GetComponent<MeshRenderer>().enabled = true;
+                AllBoostZones[randomIndex].GetComponent<CapsuleCollider>().enabled = true;
+           // }
+            
+           
         }
     }
+
+
 }
