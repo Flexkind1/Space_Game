@@ -14,6 +14,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     float speed = 15f;
     float CurrentSpeed = 15f;
+    float wantedSpeed;
 
     // float lerpTime = 1f;
     // float currentLerpTime;
@@ -28,8 +29,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     bool isGrounded;
-    
-    
+
+    float i = 0f;
 
     void Start()
     {
@@ -97,53 +98,50 @@ public class ThirdPersonMovement : MonoBehaviour
     public void SpielerLangsam()
     {
 
-        // LerpTime = 0;
-        // StartCoroutine(NormaleV)
-        // for(int i = 0; i<9; i++)
-        // {
-        //     speed = Mathf.Lerp(15f, 5f, LerpTime);
-        //  }
-
-        speed = 5f;
-        Invoke("ResetPlayerSpeed", 3);
+        
+        wantedSpeed = 5f;
+        StopAllCoroutines();
+        StartCoroutine("LerpTest");
         
 
     }
 
-    public void ResetPlayerSpeed()
-    {
-        //float perc = currentLerpTime / lerpTime;
-        //Lerptimeupdate();
-         speed = 15f;
-       
-        
-       // speed = Mathf.Lerp(CurrentSpeed , 15f, LerpTime);
-       
-       
-    }
+  
 
     public void SpielerSchnell()
     {
-        speed = 25f;
-        //Mathf.Lerp(CurrentSpeed, 25f, Time.deltaTime);
-        // CurrentSpeed = 25f;
-        Invoke("ResetPlayerSpeed", 3);
+        wantedSpeed = 25f;
+        StopAllCoroutines();
+        StartCoroutine("LerpTest");
+       }
+
+ IEnumerator LerpTest()
+    {
+        for (int t = 0; t < 9; t++)
+        {
+            i += 0.1f;
+            speed = Mathf.Lerp(CurrentSpeed, wantedSpeed, i);
+            yield return new WaitForSeconds(0.05f);
+        }
+        CurrentSpeed = wantedSpeed;
+        i = 0f;
+        StartCoroutine("LerpReturn");
     }
-
-   /* void Lerptimeupdate()
+    IEnumerator LerpReturn()
     {
-        if (LerpTime < 1f)
-        {
-            LerpTime += 0.1f;
-        }
-        else
-        {
-            LerpTime = 0f;
-        }
-    }*/
+        yield return new WaitForSeconds(3f);
+        StopCoroutine("LerpTest");
 
-   /* IEnumerator NormaleV(float time)
-    {
-       
-    }*/
+        wantedSpeed = 15f;
+
+        for (int m = 0; m < 9; m++)
+        {
+            i += 0.1f;
+            speed = Mathf.Lerp(CurrentSpeed, wantedSpeed, i);
+            yield return new WaitForSeconds(0.05f);
+        }
+        i = 0;
+        CurrentSpeed = wantedSpeed;
+        yield break;
+    }
 }
