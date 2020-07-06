@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.TerrainAPI;
 using UnityEngine.AI;
+using UnityEngine.Timeline;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController controller;
 
     public Transform cam;
+
+    
+    public AudioSource walk;
+    public AudioSource jog;
+    public AudioSource run;
+    int current;
 
     Animator animator;
 
@@ -34,13 +41,21 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void Start()
     {
+        
         Cursor.lockState = CursorLockMode.Locked;
         animator = GetComponentInChildren<Animator>();
-        LerpTime = 0f; 
-       
+        LerpTime = 0f;
+
+        //Footsteps = gameObject.GetComponent<AudioSource>();
+        //Footsteps = GetComponent<AudioSource>();
+        run.Pause();
+        walk.Pause();
+        jog.Pause();
+        // Footsteps.clip = jog;
     }
     void Update()
     {
+        
 
         //increment timer once per frame
         /* currentLerpTime += Time.deltaTime;
@@ -92,7 +107,40 @@ public class ThirdPersonMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        
+
+        Debug.Log(direction.magnitude);
+
+        if (direction.magnitude >= 0.1f)
+            {
+                if (speed > 6 && speed < 16)
+                {
+                    run.Pause();
+                    walk.Pause();
+                    jog.UnPause();
+                }
+
+                if (speed > 0 && speed < 6)
+                {
+
+                    jog.Pause();
+                    run.Pause();
+                    walk.UnPause();
+                }
+
+                if (speed > 16 && speed < 27)
+                {
+
+                    walk.Pause();
+                    jog.Pause();
+                    run.UnPause();
+                }
+            }else{
+            run.Pause();
+            jog.Pause();
+            walk.Pause();
+        }
+
+
     }
 
     public void SpielerLangsam()
@@ -101,6 +149,8 @@ public class ThirdPersonMovement : MonoBehaviour
         
         wantedSpeed = 5f;
         StopAllCoroutines();
+       // Footsteps.UnPause();
+       // Footsteps.clip = jog;
         StartCoroutine("LerpTest");
         
 
@@ -125,6 +175,7 @@ public class ThirdPersonMovement : MonoBehaviour
         }
         CurrentSpeed = wantedSpeed;
         i = 0f;
+       
         StartCoroutine("LerpReturn");
     }
     IEnumerator LerpReturn()

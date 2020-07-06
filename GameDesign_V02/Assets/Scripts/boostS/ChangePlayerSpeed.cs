@@ -36,7 +36,7 @@ public class ChangePlayerSpeed : MonoBehaviour
         KristallLangsam.PlayOneShot(KristallLangsam.clip);
         Spieler.GetComponent<ThirdPersonMovement>().SpielerLangsam();
         this.gameObject.GetComponent<MeshRenderer>().enabled = false;
-        this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        this.gameObject.GetComponent<CapsuleCollider>().enabled = false;
     }
 
    /* private void OnTriggerExit(Collider other)
