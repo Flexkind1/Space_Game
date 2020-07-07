@@ -10,8 +10,8 @@ public class boostSpawn1 : MonoBehaviour
     void Start()
     {
         //InvokeRepeating("RandomIndex", 1, 1);
-        InvokeRepeating("DestroyBoosts", 1, 1);
-        InvokeRepeating("SpawnBoosts", 2, 1);
+        InvokeRepeating("DestroyBoosts", 1, 3);
+        InvokeRepeating("SpawnBoosts", 2, 3);
     }
 
 

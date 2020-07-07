@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\SlimUI\Editor\SlimUIWindow.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\Volumetric Lights\Editor\ImageEffects\TonemappingEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/GameDesign_UnityOrdner/GameDesign_V02/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
@@ -717,6 +718,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{7D62F1B4-D8CC-D67B-3EBC-10B692674CEE}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{8BF9B127-D7FF-2A85-0172-5EE7FC81E0B2}</Project>
       <Name>Assembly-CSharp</Name>
