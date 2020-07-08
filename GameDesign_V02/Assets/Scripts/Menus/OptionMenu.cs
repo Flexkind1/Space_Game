@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class OptionMenu : MonoBehaviour
 {
     int startHigh;
+    public AudioSource Hover;
 
    public void DeleteHighscore()
     {
@@ -15,5 +16,8 @@ public class OptionMenu : MonoBehaviour
 
     }
 
-
+    public void OnMouseEnter()
+    {
+        Hover.Play();
+    }
 }

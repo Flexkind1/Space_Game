@@ -8,11 +8,15 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public TextMeshProUGUI highscoreText;
-
+    public GameObject Fade;
+    public AudioSource ButtonHover;
+    public AudioSource ButtonClick;
 
     void Start()
     {
         highscoreText.text = "Highscore " + PlayerPrefs.GetInt("Highscore");
+        Invoke("FadeIn", 1.3f);
+       // ButtonHover = GetComponent<AudioSource>();
     }
     public void PlayGame ()
     {
@@ -26,5 +30,15 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    void FadeIn()
+    {
+        Fade.SetActive(false);
+    }
+    public void OnMouseEnter()
+    {
+       
+        ButtonHover.Play();
+    }
 
+    
 }

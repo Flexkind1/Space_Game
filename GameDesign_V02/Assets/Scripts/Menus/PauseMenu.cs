@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,6 +9,8 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+
+    public AudioSource HoverSound;
 
     void Update()
     {
@@ -38,6 +41,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
         Cursor.lockState = CursorLockMode.None;
+        
     }
 
     public void LoadMenu()
@@ -51,5 +55,10 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
          Debug.Log("QuitGame");
+    }
+
+    public void OnMouseEnter()
+    {
+        HoverSound.Play();
     }
 }

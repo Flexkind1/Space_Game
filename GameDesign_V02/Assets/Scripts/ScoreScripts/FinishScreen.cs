@@ -8,7 +8,7 @@ public class FinishScreen : MonoBehaviour
 {
     public GameObject FinishDisplay;
     public GameObject Player;
-    
+    public AudioSource Hover;
     
    
     // Start is called before the first frame update
@@ -33,8 +33,8 @@ public class FinishScreen : MonoBehaviour
         }
     }
 
-   void StopPlayer()
+    public void OnMouseEnter()
     {
-        
+        Hover.Play();
     }
 }
